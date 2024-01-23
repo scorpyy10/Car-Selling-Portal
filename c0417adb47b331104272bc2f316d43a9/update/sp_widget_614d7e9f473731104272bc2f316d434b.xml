@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	c.test=function(){
+		c.data.temp1=c.sellerName;
+		c.data.temp2=c.carModel;
+		c.data.temp3=c.carPrice;
+		c.data.temp4=c.carAge;
+		c.server.update();
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>&lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    &lt;/style&gt;</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>car_sell</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>car sell</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var gr=new GlideRecord('x_1299822_car_sell_carsell');
+	gr.initialize();
+	gr.setValue('car_seller_name',input.temp1);
+	gr.setValue('car_model',input.temp2);
+	gr.setValue('price',input.temp3);
+	gr.setValue('car_age',input.temp4);
+	gr.insert();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 10:19:11</sys_created_on>
+        <sys_id>614d7e9f473731104272bc2f316d434b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>car sell</sys_name>
+        <sys_package display_value="Car Selling Portal" source="x_1299822_car_sell">c0417adb47b331104272bc2f316d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Selling Portal">c0417adb47b331104272bc2f316d43a9</sys_scope>
+        <sys_update_name>sp_widget_614d7e9f473731104272bc2f316d434b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 11:15:12</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Trade-In Service</title>
+    
+</head>
+<body>
+
+    <h2>Car Trade-In Service</h2>
+    <form action="#" method="post" id="carTradeInForm">
+        <label for="sellerName">Seller Name:</label>
+        <input type="text" id="sellerName" name="sellerName" ng-model="c.sellerName" required>
+
+        <label for="carModel">Car Model:</label>
+        <input type="text" id="carModel" name="carModel" ng-model="c.carModel" required>
+
+        <label for="carPrice">Car Price:</label>
+        <input type="number" id="carPrice" name="carPrice" ng-model="c.carPrice" required>
+
+        <label for="carAge">Car Age:</label>
+        <input type="number" id="carAge" name="carAge" ng-model="c.carAge" required>
+
+        <button type="submit" ng-click="c.test()">Submit Trade-In Request</button>
+    </form>
+
+</body>
+</html>
+]]></template>
+    </sp_widget>
+</record_update>

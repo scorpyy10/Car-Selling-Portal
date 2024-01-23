@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="68727217473731104272bc2f316d43a3" label="carsell" max_length="40" name="x_1299822_car_sell_carsell" type="collection">
+        <element label="Car age" max_length="40" name="car_age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Car Model" max_length="40" name="car_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Price " max_length="40" name="price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Seller Name" max_length="40" name="seller_name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="encode_utf8=false" label="Seller Name" max_length="32" name="u_reference_1" reference="x_1299822_car_sell_car_seller_details" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>
