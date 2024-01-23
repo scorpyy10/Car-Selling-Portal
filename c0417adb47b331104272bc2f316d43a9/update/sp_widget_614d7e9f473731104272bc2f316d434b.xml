@@ -61,26 +61,28 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	var gr=new GlideRecord('x_1299822_car_sell_carsell');
+	if(input){
 	gr.initialize();
 	gr.setValue('car_seller_name',input.temp1);
 	gr.setValue('car_model',input.temp2);
 	gr.setValue('price',input.temp3);
 	gr.setValue('car_age',input.temp4);
 	gr.insert();
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-23 10:19:11</sys_created_on>
         <sys_id>614d7e9f473731104272bc2f316d434b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>car sell</sys_name>
         <sys_package display_value="Car Selling Portal" source="x_1299822_car_sell">c0417adb47b331104272bc2f316d43a9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Selling Portal">c0417adb47b331104272bc2f316d43a9</sys_scope>
         <sys_update_name>sp_widget_614d7e9f473731104272bc2f316d434b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-23 11:15:12</sys_updated_on>
+        <sys_updated_on>2024-01-23 13:40:52</sys_updated_on>
         <template><![CDATA[<!DOCTYPE html>
 <html lang="en">
 <head>

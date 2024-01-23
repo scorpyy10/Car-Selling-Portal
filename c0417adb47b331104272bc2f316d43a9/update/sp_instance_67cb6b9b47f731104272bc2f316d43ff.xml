@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>info</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e25eab5f47f731104272bc2f316d431c</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 13:42:29</sys_created_on>
+        <sys_id>67cb6b9b47f731104272bc2f316d43ff</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Selling Portal" source="x_1299822_car_sell">c0417adb47b331104272bc2f316d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Selling Portal">c0417adb47b331104272bc2f316d43a9</sys_scope>
+        <sys_update_name>sp_instance_67cb6b9b47f731104272bc2f316d43ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 13:54:31</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "carsell?id=carselldisplay",
+		"displayValue": "carsell?id=carselldisplay"
+	},
+	"button_text": {
+		"value": "records of table",
+		"displayValue": "records of table"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=67cb6b9b47f731104272bc2f316d43ff"/>
+</record_update>

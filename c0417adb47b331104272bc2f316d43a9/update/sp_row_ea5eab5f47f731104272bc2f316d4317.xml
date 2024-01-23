@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <sp_column display_value="1">985ee31f47f731104272bc2f316d4346</sp_column>
+        <sp_container/>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 13:53:37</sys_created_on>
+        <sys_id>ea5eab5f47f731104272bc2f316d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Car Selling Portal" source="x_1299822_car_sell">c0417adb47b331104272bc2f316d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Selling Portal">c0417adb47b331104272bc2f316d43a9</sys_scope>
+        <sys_update_name>sp_row_ea5eab5f47f731104272bc2f316d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-23 13:53:37</sys_updated_on>
+    </sp_row>
+</record_update>
